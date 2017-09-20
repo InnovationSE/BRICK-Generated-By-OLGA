@@ -1,0 +1,14 @@
+from rdflib import Namespace, Graph, Literal, RDF, URIRef
+from rdfalchemy.rdfSubject import rdfSubject
+from rdfalchemy import rdfSingle, rdfMultiple, rdfList
+
+from brick.brickschema.org.schema._1_0_2.Brick.Heating_Supply_Air_Temperature_Proportional_Band_Setpoint import Heating_Supply_Air_Temperature_Proportional_Band_Setpoint
+from brick.brickschema.org.schema._1_0_2.Brick.AHU_Supply_Air_Temperature_Heating_Setpoint import AHU_Supply_Air_Temperature_Heating_Setpoint
+from brick.brickschema.org.schema._1_0_2.Brick.AHU_Discharge_Air_Temperature_Heating_Setpoint import AHU_Discharge_Air_Temperature_Heating_Setpoint
+from brick.brickschema.org.schema._1_0_2.Brick.Heating_Discharge_Air_Temperature_Proportional_Band_Setpoint import Heating_Discharge_Air_Temperature_Proportional_Band_Setpoint
+
+
+class AHU_Heating_Discharge_Air_Temperature_Proportional_Band_Setpoint(Heating_Supply_Air_Temperature_Proportional_Band_Setpoint,AHU_Supply_Air_Temperature_Heating_Setpoint,AHU_Discharge_Air_Temperature_Heating_Setpoint,Heating_Discharge_Air_Temperature_Proportional_Band_Setpoint):
+    rdf_type = Namespace('https://brickschema.org/schema/1.0.2/Brick#').AHU_Heating_Discharge_Air_Temperature_Proportional_Band_Setpoint
+	
+	

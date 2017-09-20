@@ -1,0 +1,12 @@
+from rdflib import Namespace, Graph, Literal, RDF, URIRef
+from rdfalchemy.rdfSubject import rdfSubject
+from rdfalchemy import rdfSingle, rdfMultiple, rdfList
+
+from brick.brickschema.org.schema._1_0_2.Brick.Exhaust_Fan import Exhaust_Fan
+from brick.brickschema.org.schema._1_0_2.Brick.Enable import Enable
+
+
+class Exhaust_Fan_Enable(Exhaust_Fan,Enable):
+    rdf_type = Namespace('https://brickschema.org/schema/1.0.2/Brick#').Exhaust_Fan_Enable
+	
+	
