@@ -13,3 +13,12 @@ OLGA takes as input the following:
 	4. RDFAlchemy - Python
 
 The output of OLGA is a generated library ready to be used by IoT developers. The generated library is conform to the ontology and is dependent on available serializers and ORMs in various languages (C#, Java, and Python for now)
+
+# BRICK Example
+[Brick](http://brickschema.org/structure/) is a uniform schema for representing metadata in buildings. The schema defines a concrete ontology for sensors, subsystems and relationships among them, which enables portable applications.
+
+The following sections contain the generated code by OLGA of BRICK[.ttl](http://brickschema.org/ttl/Brick.ttl) Ontology. Each section provides the following:
+1. Packaged generated library in .dll, .whl, and .jar
+2. Generated source code in C\#, Python, and Java
+
+
